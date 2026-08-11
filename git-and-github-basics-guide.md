@@ -1,82 +1,166 @@
 # Understanding Git and GitHub
 
-## What is Git?
+## What Is Git?
 
-It's a way of storing and controlling versions of files on your computer.
+Git is a version control system that allows you to store and manage different versions of files on your computer.
 
-## What is GitHub?
+## What Is GitHub?
 
-A cloud service where you can 'store' your versions online.
+GitHub is a cloud-based service where you can store and share Git repositories online.
 
-## How to save versions on your computer:
+## How to Save Versions on Your Computer
 
- 1. Make or move into the directory you want to 'save'.
- 1. Initialize Git - in the terminal.
+### 1. Create or Move into Your Project Directory
 
-   `$git init`
+Navigate to the directory you want Git to track.
 
-  This will initialize git in a hidden .git folder (you can check this with ls -a)
-  This hidden folder will allow you to track and save versions of files in this folder
+### 2. Initialize Git
 
- 1. Check the status of git in that directory.
+In the terminal, run:
 
-   `$git status`
+```bash
+git init
+```
 
-  The output from terminal should read "On branch master" and then list Untracked files
-  it will also prompt you to git add to track
+This creates a hidden `.git` folder that Git uses to track changes in your project.
 
- 1. Add files to be tracked.
+You can verify that the folder exists with:
 
-   `$git add <filename>`
+```bash
+ls -a
+```
 
-  This will tell git that you want to 'track' that file and the changes made to it
+### 3. Check Git Status
 
- 1. Commit track snapshot to memory.
+Run:
 
-   `$git commit -m "add a message here"`
+```bash
+git status
+```
 
-  Here you are telling git to actually take the snapshot, be sure to add -m and a message in quotes
-  This message you be a human readable note about what has been changed since the last snapshot
+The output should indicate that you are on the `master` branch (or `main`, depending on your Git configuration) and display any untracked files.
 
-  At this point, your computer has taken a picture of the code at this moment and you are free to modify your files and repeat the cycle.
+### 4. Add Files to Be Tracked
 
-## How to add a commit to GitHub:
+Run:
 
- 1. Log on to your account on GitHub, in the upper right hand corner select the *+* sign, from the drop down menu select NEW REPOSITORY.
+```bash
+git add <filename>
+```
 
- 1. Enter in a repository name.
+Example:
 
- 1. Select Public or Private. GitHub allows each user to have several free private files, however as new developers it is great to beef up your public repos for potential employers to see how you code
+```bash
+git add README.md
+```
 
- 1. Click the create repository button.
+This tells Git to begin tracking the file and any future changes made to it.
 
- 1. You will be directed to a new page that will tell you how to create a repo locally. If you have already saved a version on your computer (see How to save version on your computer), skip to the line that reads
+### 5. Commit Your Changes
 
-   `git remote add origin https://github.com/<yourUserName>/<yourRepoName>.git`
+Run:
 
-  Copy this line and add it in your terminal. This tells your computer where to 'push' files to online
+```bash
+git commit -m "add a message here"
+```
 
- 1. Push your commits up to GitHub
-  Once you have successfully committed files in terminal run
+Example:
 
-   `$git push -u origin master`
+```bash
+git commit -m "Created initial project files"
+```
 
-  This will push your commits to your master branch on GitHub.
+The message should briefly describe the changes made since the previous commit.
 
- 1. Refresh your page on GitHub, you should now see a repo with the files you pushed up from your computer.
+At this point, Git has saved a snapshot of your project. You can continue making changes and repeat the process whenever you want to save a new version.
 
-  Now you are free to continue working (and taking more snapshots) on your computer
+---
 
-  The next time you want to take a snapshot, these are the commands:
+## How to Add a Local Repository to GitHub
 
-   `$git status`
+### 1. Create a GitHub Repository
 
-   `$git add <filename>`
+1. Log in to GitHub.
+2. Click the **+** icon in the upper-right corner.
+3. Select **New Repository**.
+4. Enter a repository name.
+5. Choose whether the repository should be **Public** or **Private**.
+6. Click **Create Repository**.
 
-   `$git status`
+### 2. Connect Your Local Repository to GitHub
 
-   `$git commit -m "your message here"`
+If you have already initialized Git locally, run:
 
-   `$git status`
+```bash
+git remote add origin https://github.com/<yourUserName>/<yourRepoName>.git
+```
 
-   `$git push origin master`
+Example:
+
+```bash
+git remote add origin https://github.com/craig/sample-project.git
+```
+
+This tells Git where your remote GitHub repository is located.
+
+### 3. Push Your Commits to GitHub
+
+Run:
+
+```bash
+git push -u origin master
+```
+
+If your repository uses the `main` branch instead of `master`, use:
+
+```bash
+git push -u origin main
+```
+
+This uploads your local commits to GitHub.
+
+### 4. Verify the Upload
+
+Refresh the repository page on GitHub. You should now see the files from your local repository.
+
+---
+
+## Typical Git Workflow
+
+After your repository has been connected to GitHub, your day-to-day workflow will usually look like this:
+
+```bash
+git status
+git add <filename>
+git status
+git commit -m "your message here"
+git status
+git push origin master
+```
+
+Or, if your default branch is `main`:
+
+```bash
+git status
+git add <filename>
+git status
+git commit -m "your message here"
+git status
+git push origin main
+```
+
+Repeat this process whenever you want to save and publish new changes to your project.
+
+---
+
+## Common Git Commands
+
+| Command | Purpose |
+|----------|----------|
+| `git init` | Initialize a Git repository |
+| `git status` | View the current repository status |
+| `git add <filename>` | Stage a file for commit |
+| `git commit -m "message"` | Create a snapshot of changes |
+| `git push origin master` | Upload commits to GitHub |
+| `git pull origin master` | Download updates from GitHub |
+| `git log` | View commit history |
