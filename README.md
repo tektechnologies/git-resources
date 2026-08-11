@@ -1,5 +1,11 @@
 # Git Resources
 
+https://learngitbranching.js.org/
+https://www.githubstatus.com/history
+https://ohshitgit.com/
+https://github.com/dahlbyk/posh-git
+
+
 A collection of beginner-friendly guides for learning Git and GitHub fundamentals, including repository management, team workflows, and merge conflict resolution.
 
 ## Contents
