@@ -1,6 +1,4 @@
-# Assignment Overview: Lab 15
-
-Read the document, in its entirety, before beginning your lab. To view this lab assignment in its own tab, click [HERE](https://codefellows.github.io/code-201-guide/curriculum/class-15/lab-a/){:target="_blank"}
+# Assignment Overview: Lab Merge Conflict Exercise
 
 ## Problem Domain
 
