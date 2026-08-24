@@ -1,7 +1,5 @@
 # Git Resources
 
-# Git Resources
-
 * [Learn Git Branching](https://learngitbranching.js.org/) — Interactive visual tutorial for learning Git.
 * [GitHub Status History](https://www.githubstatus.com/history) — Check GitHub's historical service status and incidents.
 * [Oh Shit, Git!?](https://ohshitgit.com/) — Practical solutions for common Git mistakes.
