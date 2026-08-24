@@ -1,4 +1,4 @@
-# Programming Concepts Covered
+# Git Programming Concepts Covered
 
 Today is about VCS, a version control system.
 
@@ -8,32 +8,74 @@ we can actually have only one file that we can roll back to any of the previous
 versions of the file or file system.
 
 What is a hotfix? and why is it important to have commits to follow the git pushes
-to production? So that we can track all changes.
+to production? So that we can track all changes. ref ACP 
 
-How do we showcase and strategize around github for job searching.
-
-Programming is not a memorization task, you can memorize pieces of it. Creating apps,
+Programming and GitHub is not a memorization task, you can memorize pieces of it. Creating apps,
 is an intangible process, using your words and your thought process to make things
-happen. Using git will become easy through muscle memory. Git feels though, and
+happen. Using git will become easy through muscle memory. Git feels tough, and
 then it will be like wow I forgot about git hub, and you will just do it. Because
 you have done it so many times.  
 
 The idea we are working towards is collaboration against my code base is the
 conceptual understanding.
 
-## Let students Read
+## Lets Start here students.
 
-Then I will demo 3-4 times the process, slower to faster.
+|                        | Git                        | GitHub                              |
+| ---------------------- | -------------------------- | ----------------------------------- |
+| **What it is**         | Version control software   | Online platform                     |
+| **Where it runs**      | On your computer           | In the cloud                        |
+| **Main purpose**       | Track changes to code      | Store and share Git repositories    |
+| **Internet required?** | No                         | Usually, yes                        |
+| **Examples**           | `git commit`, `git branch` | Pull requests, Issues, code reviews |
 
-After first break, do the Reflection and Discussion, while we need to do the
-journal, but what is more important is to read through the udemy git hub, you
-will have a lot of questions, over time ask them and they will get answered. Read
-for 15 minutes and then we are going to cover, ACP, and I will see you all in 15
-minutes. Ask TA's for help if you have any high level questions.
 
-## Any questions that are not covered in class can be addressed in slack, after class
+GitHub allows developers a shared space to work on the same projects. It connects people, code, and ideas so developers can build together, see each other’s changes, and continuously improve the same codebase. *** That’s the whole point of using GitHub: to make collaboration on software simple, organized, and accessible to everyone on the team. ***
+
+
+## Any questions that are not covered in class can be addressed in Teams/Slack/Zoom, after class
 
 ## White board A C P process  
+
+┌──────────────────┐
+│  Make Changes    │
+│  to Your Code    │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│      ADD         │
+│   git add .      │
+│                  │
+│ Stage your       │
+│ changes          │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│     COMMIT       │
+│ git commit -m    │
+│ "message"        │
+│                  │
+│ Save a snapshot  │
+│ of your changes  │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│      PUSH        │
+│   git push       │
+│                  │
+│ Upload commits   │
+│ to GitHub        │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│      GITHUB      │
+│                  │
+│ Remote repository│
+└──────────────────┘
 
 ## show when and where git status (check to make sure it worked)
 
@@ -43,7 +85,7 @@ to date.
 ## Step one go to Git Hub . com
 
 Explain repositories.
-Most people ave one project per repo.
+Most people have one project per repo.
 Description shows up on repo page.
 
 ## Notes on Terminals  
@@ -52,8 +94,6 @@ Can you blow up your computer no.
 Can you delete everything on your pc, possibly.
 
 ## git is a base command that we always use
-
-## I will give you access to our 102 repo
 
 ## now create the scaffolding
 
@@ -105,8 +145,6 @@ location and messing up the application.
 
 and communicate the work you did properly
 
-Remind them that they have TA's to get help from as they are working through lab.
-
 So your job, is to pull down repo, update it and push it back up.
 So, I will delete my old one, and create one more quickly, to show you the flow.
 and then you will have 30 minutes with the help of the TA's to work through your
@@ -118,10 +156,8 @@ the next month.
 
 ### Read through the assignment lab
 
-stress that the acp is happening, and yes learning journal is important, add
+stress that the acp is happening, and use the learning journal as our practice repo, add
 something but pay more attention today to the ACP process.
-
-Explain what the stretch goals are, and that they are a developer thing as well.
 
 ### I will check back in with 15 minutes left to go
 
@@ -129,9 +165,9 @@ Do not be afraid, to ask what step one is. The model is to confirm what we learn
 not on the day that it is taught, but over time as learning continues it will
 become apparent what you know and what you don't.
 
-Look in slack at the series of steps.
+Look in slack or Teams at the series of steps.
 
-#### Step 1 - Navigate to your learning journal repo
+#### Step 1 - Navigate to your git learning journal repo
 
 #### Step 2 - Clone your repo down onto your local machine. git clone github-repo-url.git
 
@@ -151,21 +187,4 @@ If you weren't able to push code that's ok, we will go through next why and then
 as a group we will get there. some may not be able to do code . to work, and we
 get those things taken care of next time.
 
-explain a for loop as a funky bit of code that we will spend an hour and half,
-of what it is and then you'll spend a month practicing, before we are even able
-to do it from memory, we need to be able to identify the parts, html and css have
-less of a barrier to understanding, then focus on js, the language of choice to
-learn fundamentals and programming concepts that will transcend languages, so for
-the for loop, I would be happy if you new what it was, what it is supposed to do,
-takes practice, out put of class what why it is used, and you can identify its parts,
-maybe not create it but knowing it at a high level. not just teaching js for the
-sake of doing js.
 
-201 reading - what am I looking at.  (get it to work)
-301 writing - have a base, give me a pattern to utilize this stuff. (make it faster)
-401 creating. - make your own stuff. (make it good.)
-
-jumping out of an airplane, we have parachute. lots of graduates that have been
-doing this, and making money, even get in the door, get in the loop, working as
-much as possible, as a dev, and by 401, this is just what I do, I am in it. it is
-constant you have to figure this out, we give you an inch, you take it a mile.

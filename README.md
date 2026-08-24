@@ -6,8 +6,7 @@
 * [GitHub Status History](https://www.githubstatus.com/history) — Check GitHub's historical service status and incidents.
 * [Oh Shit, Git!?](https://ohshitgit.com/) — Practical solutions for common Git mistakes.
 * [posh-git](https://github.com/dahlbyk/posh-git) — PowerShell environment for Git with enhanced prompts and tab completion.
-
-
+* [awesome-readme-template](https://github.com/Louis3797/awesome-readme-template) - awesome-readme-template
 
 A collection of beginner-friendly guides for learning Git and GitHub fundamentals, including repository management, team workflows, and merge conflict resolution.
 
