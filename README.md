@@ -5,7 +5,9 @@
 * [Oh Shit, Git!?](https://ohshitgit.com/) — Practical solutions for common Git mistakes.
 * [posh-git](https://github.com/dahlbyk/posh-git) — PowerShell environment for Git with enhanced prompts and tab completion.
 * [awesome-readme-template](https://github.com/Louis3797/awesome-readme-template) - awesome-readme-template
-* [What is Hard about Git](https://cursor.com/blog/git-at-any-scale) - git-at-any-scale
+* [blog.udemy](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/) - git-tutorial-a-comprehensive-guide
+
+
 
 A collection of beginner-friendly guides for learning Git and GitHub fundamentals, including repository management, team workflows, and merge conflict resolution.
 

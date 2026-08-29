@@ -1,6 +1,6 @@
 # How You'll Learn
 
-## "Path" Learning:
+## "Path" Learning
 
 - Leads you along
 - Students are consumers of information
