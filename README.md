@@ -11,67 +11,64 @@ A collection of beginner-friendly guides for learning Git and GitHub fundamental
 
 ## Contents
 
-### 📘 Git and GitHub Basics
+### 📚 Learning Materials
 
-**File:** `git-and-github-basics-guide.md`
+#### 📘 Learn Git (`learn-git/`)
 
-Learn the fundamentals of Git and GitHub, including:
+**Core Guides:**
 
-- What Git is
-- What GitHub is
-- Creating a local repository
-- Tracking files
-- Committing changes
-- Connecting a repository to GitHub
-- Pushing code to a remote repository
+* **`git-and-github-basics-guide.md`** - Fundamentals of Git and GitHub, including repository creation, tracking files, committing changes, and connecting to GitHub.
+  
+* **`git-repo-setup-acp.md`** - Introduction to core Git concepts and the Add-Commit-Push (ACP) workflow, with explanations of Git vs GitHub and version control.
 
----
+* **`git-branching-part-2.md`** - Comprehensive guide to Git branches, their purpose, creation, pushing to remote repositories, and best practices for collaborative development.
 
-### 🔄 GitHub Workflow
+* **`git-forking-repos.md`** - Learn about forking repositories, when to use forks, and how to contribute to projects you don't own through the forking workflow.
 
-**File:** `github-workflow.md`
-
-A step-by-step guide for:
-
-- Navigating the command line
-- Creating project folders
-- Cloning repositories
-- Working with local copies of projects
-- Understanding common Git commands
-
-This guide walks through a typical developer workflow from repository creation to daily development tasks.
+**Supporting Assets:**
+* `git-branching-A.png` & `git-branching-B.png` - Visual diagrams illustrating branching concepts
+* `github-pages-guide.pdf` - Guide to publishing projects with GitHub Pages
 
 ---
 
-### 👥 Team Workflow
+#### 🔄 Manage Git (`manage-git/`)
 
-**File:** `git-team-workflow.md`
+* **`github-workflow.md`** - Step-by-step guide to developer workflows including command line navigation, cloning repositories, and common Git commands.
 
-Learn how Git supports collaboration among multiple developers.
+* **`git-team-workflow.md`** - Learn collaborative Git practices for working with multiple developers, including pulling updates, creating branches, and coordinating efforts.
 
-Topics may include:
-
-- Working with shared repositories
-- Pulling updates from teammates
-- Creating and using branches
-- Submitting changes
-- Coordinating development efforts
+* **`pull_request_template.md`** - Standard pull request template with release readiness checklist and documentation requirements for team contributions.
 
 ---
 
-### ⚠️ Handling Merge Conflicts
+#### ⚠️ Handling Merge Conflicts (`git-issues-conflicts/`)
 
-**File:** `handle-merge-conflicts.md`
+* **`handle-merge-conflicts.md`** - Learn to identify and resolve merge conflicts, including understanding conflict markers, editing strategies, and best practices.
 
-Learn how to identify and resolve merge conflicts when multiple developers modify the same files.
+* **`merge-conflict-exercise.md`** - Hands-on lab exercise for practicing merge conflict resolution with team scenarios and role-based exercises.
 
-Topics include:
+---
 
-- Understanding why merge conflicts occur
-- Reviewing conflicting changes
-- Editing conflict markers
-- Completing merges successfully
-- Best practices for avoiding conflicts
+#### 🎓 Introduction to Git Slides (`intro-to-git-slideDeck-wip/`)
+
+A comprehensive slide deck covering Git and GitHub concepts:
+
+* Slides 1-29 covering topics from ice breakers through advanced Git concepts
+* Includes visual diagrams and interactive exercises
+* Multiple supporting images for reference
+* Designed for classroom instruction and self-paced learning
+
+**Note:** This is a work-in-progress (WIP) slide deck and may be updated regularly.
+
+---
+
+#### ⚙️ Configuration Files (`github-config-files/`)
+
+Ready-to-use configuration files for development projects:
+
+* `.eslintrc.json` - ESLint configuration for JavaScript/TypeScript linting
+* `.gitignore` - Standard gitignore patterns for common project types
+* `.markdownlint.json` - Markdown linting configuration
 
 ---
 
@@ -79,31 +76,86 @@ Topics include:
 
 Before using these guides, make sure you have:
 
-- Git installed on your computer
-- A GitHub account
-- A code editor such as VS Code
-- Basic familiarity with using a terminal or command prompt
+* Git installed on your computer
+* A GitHub account
+* A code editor such as VS Code
+* Basic familiarity with using a terminal or command prompt
 
 ---
 
 ## Recommended Learning Path
 
-If you are new to Git and GitHub, follow the guides in this order:
+If you are new to Git and GitHub, follow these guides in this order:
 
-1. `git-and-github-basics-guide.md`
-2. `github-workflow.md`
-3. `git-team-workflow.md`
-4. `handle-merge-conflicts.md`
+### Beginner Track
 
-This progression moves from individual Git usage to collaborative development workflows.
+1. **`learn-git/git-and-github-basics-guide.md`** - Start with the fundamentals
+2. **`learn-git/git-repo-setup-acp.md`** - Learn the Add-Commit-Push workflow
+3. **`manage-git/github-workflow.md`** - Understand day-to-day development workflow
+
+### Intermediate Track
+
+1. **`learn-git/git-branching-part-2.md`** - Master branching and collaboration
+2. **`manage-git/git-team-workflow.md`** - Learn team collaboration practices
+3. **`git-issues-conflicts/handle-merge-conflicts.md`** - Understand conflict resolution
+
+### Advanced / Practice Track
+
+1. **`git-issues-conflicts/merge-conflict-exercise.md`** - Hands-on practice with merge conflicts
+2. **`learn-git/git-forking-repos.md`** - Contribute to projects through forking
+
+### Supplementary Resources
+
+* **Slides:** Review `intro-to-git-slideDeck-wip/` for visual instruction and classroom materials
+* **Templates:** Use `manage-git/pull_request_template.md` for team submissions
+* **Configuration:** Apply files from `github-config-files/` to your projects
 
 ---
 
 ## Useful Git Commands
 
+### Basic Workflow (Add-Commit-Push)
+
 ```bash
-git status
-git add <filename>
-git commit -m "message"
-git push origin main
-git pull origin main
+git status                    # Check current repository status
+git add <filename>            # Stage specific file
+git add .                     # Stage all changes
+git commit -m "message"       # Commit staged changes
+git push origin main          # Push commits to remote repository
+```
+
+### Branching
+
+```bash
+git branch                    # List local branches
+git branch <branch-name>      # Create new branch
+git checkout <branch-name>    # Switch to branch
+git checkout -b <branch-name> # Create and switch to new branch
+git push origin <branch-name> # Push branch to remote
+```
+
+### Pulling & Merging
+
+```bash
+git pull origin main          # Fetch and merge remote main branch
+git pull origin <branch-name> # Fetch and merge specific branch
+git merge <branch-name>       # Merge branch into current branch
+```
+
+### Resolving Conflicts
+
+```bash
+git status                    # Identify conflicted files
+git diff                      # View detailed conflict markers
+git add <resolved-file>       # Stage resolved file
+git commit -m "Resolve conflicts" # Finalize merge
+```
+
+### Forking & Contributing
+
+```bash
+git clone <fork-url>          # Clone your fork to local machine
+git remote add upstream <original-url> # Add original repo as upstream
+git fetch upstream            # Fetch changes from original repository
+git merge upstream/main       # Merge upstream changes into your branch
+```
