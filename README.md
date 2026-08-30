@@ -7,8 +7,6 @@
 * [awesome-readme-template](https://github.com/Louis3797/awesome-readme-template) - awesome-readme-template
 * [blog.udemy](https://blog.udemy.com/git-tutorial-a-comprehensive-guide/) - git-tutorial-a-comprehensive-guide
 
-
-
 A collection of beginner-friendly guides for learning Git and GitHub fundamentals, including repository management, team workflows, and merge conflict resolution.
 
 ## Contents
