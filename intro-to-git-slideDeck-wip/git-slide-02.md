@@ -1,7 +1,8 @@
 # Goals
 
-- Get to know the life of a professional software developer.
-- Understand the frameworks of modern websites.
-- Code a complete website using HTML and CSS.
-- Deploy your website on the Internet.
-- Figure out whether coding is for you.
+
+Explain the purpose of Git and GitHub.
+Demonstrate basic repository creation and version control.
+Apply common Git workflows and commands.
+Collaborate with others using branches and shared repositories.
+Resolve merge conflicts and maintain code integrity.

@@ -4,8 +4,11 @@
 
 ***Its a version control system***
 
-- It lets multiple developers work on the same code
-- A history of changes to our files
-- The ability to view, apply, and remove those changes
-- Keep all your project files in one repository
-- It makes COLLABORATION possible!
+- Lets multiple people work on the same project at the same time
+- Maintains a history of changes to files
+- Allows you to view, compare, apply, and roll back changes
+- Keeps project files organized in a single repository
+- Makes collaboration easier and more reliable
+- Helps prevent accidentally overwriting someone else's work
+- Created in 2005 by Linus Torvalds, the creator of Linux
+- Today, Git is the most widely used version control system in software development
